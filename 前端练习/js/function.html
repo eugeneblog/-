@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>点击这个按钮，来调用带参数的函数</p>
+    <p>本例调用的函数会执行一个计算，然后返回结果</p>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction('Eugene','enginner');">点击</button>
+    <button type="button" onclick="myFunction('Bob','computer');">Click</button>
+    <script>
+        function myFunction(name,job){
+            alert('Welcome' + name + ",the" + job);
+        }
+    </script>
+    <script>
+        function myFunction(name,job){
+            alert('welecome' + name + ",the" + job);
+        }
+    </script>
+    <script>
+        function myFunction2(){
+            x = 3;
+            return x;
+        }
+    </script>
+    <script>
+        function myFunction2(a,b){
+            return a*b;
+        }
+        document.getElementById('demo').innerHTML = myFunction2(4,3);
+    </script>
+
+    <script>
+        myFunction();
+        document.getElementById('demo').innerHTML = window.carName;
+        function myFunction(){
+            carName = "Eugene";
+        }
+    </script>
+    <script>
+        myFunction();
+        document.getElementById('demo').innerHTML = window.carName;
+        function myFunction(){
+            carName = 'Eugene';
+        }
+    </script>
+    <script>
+        function myFunction(){
+            voteable = (age<18)?'年龄太小':'年龄已经达到';
+            voteable = (age<18)?'true':'else';
+            voteable = (age<18)?'true':'else';
+            voteable = (age<18)?'true':'else';
+            voteable = (age<18)?'true':'else';
+        }
+    </script>
+</body>
+</html>

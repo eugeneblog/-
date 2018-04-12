@@ -1,0 +1,70 @@
+*{margin: 0 auto; padding: 0 auto;}
+a{ box-shadow: 0px 4px #82a5ba;float:left;display: block;text-decoration: none;width:82px;height: 36px;background: #fff;border-radius: 3px; margin: 0 7px 11px 0;color: #888;text-align: center;line-height: 36px;font-size: 24px;}
+a:hover{background:#988cef;box-shadow: 0px 4px #6758cc; color:#fff; transition: ease .2s; }
+.main{
+    /* position: relative; */
+}
+.calculate-box{
+    margin-top: 200px;
+    width: 500px;
+    background: #a3d0e8;
+    border-radius: 5px;
+    box-shadow: 0px 4px #6a8694;
+}
+.cal-header{
+    height: 36px;
+    margin-bottom: 20px;
+}
+.cal-btn{
+    margin: 0 auto;
+    margin-right: -8px;
+    padding: 20px;
+}
+#result{
+    margin: 0px;
+    padding: 0 10px;
+    float: right;
+    width: 340px;
+    line-height: 36px;
+    margin-right: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 36px;
+    background: #82a7ba;
+    border-radius: 4px;
+    box-shadow: 0px -4px #6a8694;
+    text-align: right;
+    margin-top: 4px;
+    overflow: hidden;
+}
+#reset{
+    margin-left: 4px;
+    background: #f3a3a9;
+    color: #fff;
+    box-shadow: 0px 4px #d3545d;
+}
+#reset:hover{
+    background: #e98f93;
+    box-shadow: 0px 4px #c55c60;
+    transition: ease .2s;
+}
+.cal-body {
+    width: 460px;
+    overflow: hidden;
+}
+.cal-body > a{
+    margin-right: 10px;
+}
+.symbol{
+    background: #fdf1f5;
+}
+#summation{
+    background:#f4fea0;
+    box-shadow: 0 4px #9fa75e;
+}
+#summation:hover{
+    background: #aeb75f;
+    box-shadow: 0 4px #73793d;
+    transition: ease .2s;
+}

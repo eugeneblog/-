@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while(i<5){
+            x = x +'The number is' + i + '<br>';
+            i++;
+        }
+    </script>
+
+    <script>
+        cars = ['BMW','Volvo','Saab','Ford'];
+        var i = 0;
+        for(;cars[i];){
+            document.write(cars[i] + 'br');
+            i++;
+        }
+    </script>
+
+    <script>
+        cars = ['BMW','Volvo','Saab','Ford'];
+        var i = 0;
+        while(cars[i]){
+            document.write(cars[i] + 'br');
+            i++;
+        }
+    </script>
+    <script>
+        function myFunction(){
+            var x = '', i = 0;
+            do{
+                x = x + ' ' + i + 'br';
+                i++;
+            }
+            while(i<5)
+            document.getElementById('demo').innerHTML = x;
+        }
+    </script>
+</body>
+</html>

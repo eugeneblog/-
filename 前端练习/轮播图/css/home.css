@@ -1,0 +1,68 @@
+*{padding: 0px; margin: 0px;}
+.main{
+    width: 100%;
+    height: 460px;
+}
+a:link,a:visited{
+    color: black;
+}
+a{  text-decoration: none;}
+.menuBar{
+    width: 100%;
+    height: 40px;
+}
+.menuBar>a{
+    color: #666;
+    display: block;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    width: 25%;
+    height: 40px;
+    background: rgba(125, 125, 125, 0.1);
+}
+.menuBar>a:hover{
+    background: #ffdd55;
+
+}
+.slide-box{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 1200px;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slide-img>a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide-img>a:nth-child(1){
+    background: url('../img/1.jpg');
+    display: none;
+}
+.slide-img>a:nth-child(2){
+    background:url('../img/3.jpg');
+    display: none;
+}
+.slide-img>a:nth-child(3){
+    background:url('../img/4.jpg');
+    display: none;
+}
+.slide-img>a:nth-child(4){
+    background:url('../img/5.jpg');
+    display: none;
+}
+.menuBar>a.menuBar-active{
+    background-color: #FFCC00;
+}
+.slide-img>a.slide-img-active{
+    display: block;
+}

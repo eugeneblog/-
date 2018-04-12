@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #taday{
+        font-size: 14px;
+        text-align: center;
+    }
+    button{
+        position: absolute;
+        top: 50px;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        width: 100px;
+        height: 50px;
+        background: rgb(255, 255, 255);
+        color: rgb(107, 107, 107);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background: rgb(255, 199, 45);
+        border-color: rgb(255, 199, 45);
+        color: #fff;
+        transition: ease .2s;
+    }
+</style>
+<body>
+    <p id='taday'></p>
+    <button type="button" onclick="myFunction();">今天星期几？</button>
+    <script type="text/javascript">
+       
+        function myFunction(){
+            var x;
+            var y = new Date().getDay();
+            switch(y){
+                case 1 : x = '今天是星期一';break;
+                case 2 : x = '今天是星期二';break;
+                case 3 : x = '今天是星期三';break;
+                case 4 : x = '今天是星期四';break;
+                case 5 : x = '今天是星期五';break;
+                case 6 : x = '今天是星期六';break;
+                case 7 : x = '今天是星期天';break;
+            }
+            document.getElementById('taday').innerHTML = x;
+        }
+
+        
+    </script>
+  
+
+</body>
+</html>

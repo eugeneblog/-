@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">搜索字符串runoob，并显示匹配的起始位置</p>
+    <button onclick="myFunction()">click</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var str = 'Visit Runoob!';
+            var n = str.search(/Runoob/i);
+            document.getElementById('demo').innerHTML = n;
+        }
+    </script>
+    
+    <script>
+        function myFunction(){
+            var str = 'Vister Eugene';
+            var n = str.search(/Eugene/i);
+            document.getElementById('demo').innerHTML = n;
+        }
+    </script>
+    <script>
+        function myFunction(){
+            var str = 'Visit Bob';
+            var n = str.search(/Bob/);
+            document.getElementById('demo').innerHTML = n;
+
+        }
+    </script>
+    <script>
+        function myFunction(){
+            var str = 'Visit Eugene';
+            var n = str.search(/Eugene/);
+            document.getElementById('demo').innerHTML = n;
+
+        }
+    </script>
+    <script>
+        var a = 'sdfsadf Eugene';
+        var n = a.search(/eugene/);
+        document.getElementById('demo').innerHTML = n;
+    </script>
+    <script>
+        function myFunction(){
+            var a = document.getElementById('text').innerHTML;
+            var b = a.replace(/runoob/,'eugene');
+            document.getElementById('text').innerHTML = b;
+        }
+        
+    </script>
+
+    <script>
+        function myFunction(){
+            var a = document.getElementById('text').innerHTML;
+            var b = a.replace(/eugene/,'eugene');
+            document.getElementById('text').innerHTML = b;
+
+        }
+    </script>
+    <script>
+        function myFunction(){
+            var a = document.getElementById('text').innerHTML;
+            var b = a.replace(/vo/,'eu');
+            document.getElementById('text').innerHTML = b;
+        }
+    </script>
+</body>
+</html>
